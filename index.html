@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Speech Synthesis Jam</title>
+    <meta name="author" content="Joohyun Park">
+    <style>
+        body {
+            background-color: #262626;
+            overflow: hidden;
+            display: flex;
+            font-family: arial, sans-serif;
+        }
+
+        input {
+            text-align: center;
+            font-size: 20px;
+            width: 60px;
+            height: 60px;
+            margin: 2px;
+        }
+
+        .control {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        label {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="control">
+        <input type="text" id="value1">
+        <input type="text" id="value2">
+        <input type="text" id="value3">
+        <input type="text" id="value4">
+        <input type="text" id="value5">
+        <input type="text" id="value6">
+        <input type="text" id="value7">
+        <input type="text" id="value8">
+        <br><br><br><br><br>
+        <div class="option">
+            <label for="voice">Voice: &nbsp;</label>
+            <select name="voice" id="voice"></select>
+        </div>
+        <br><br><br>
+        <button id="button">start</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
